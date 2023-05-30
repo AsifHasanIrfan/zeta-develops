@@ -1,6 +1,32 @@
+// Slick Slider scripts
+$(document).ready(function () {
+  $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    // centerMode: true,
+    arrows: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+    ],
+  });
+});
+
 const accordionItems = document.getElementsByClassName('faq-accordion-btn');
-const tlReadBtn = document.getElementsByClassName("tl-btn");
-const hamburger = document.querySelector(".humburger");
+const tlReadBtn = document.getElementsByClassName('tl-btn');
+const hamburger = document.querySelector('.humburger');
 
 for (let i = 0; i < accordionItems.length; i++) {
   accordionItems[i].addEventListener('click', function () {
@@ -27,37 +53,10 @@ for (let i = 0; i < accordionItems.length; i++) {
 //   });
 // }
 
-hamburger.onclick = function() {
-  const nav = document.querySelector(".nav-wrapper");
-  nav.classList.toggle("active")
-}
-
-// Slick Slider scripts
-
-$(document).ready(function () {
-  $('.slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    // centerMode: true,
-    arrows: false,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2.5,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1.5,
-        },
-      },
-    ],
-  });
-});
+hamburger.onclick = function () {
+  const nav = document.querySelector('.nav-wrapper');
+  nav.classList.toggle('active');
+};
 
 // $(document).ready(function () {
 //   $(".process-slider").slick({
