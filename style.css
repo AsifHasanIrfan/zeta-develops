@@ -954,6 +954,10 @@ a {
   gap: 24px;
 }
 
+.hw-mobile-btns {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .how-works-wrapper {
     padding: 0 20px;
@@ -1003,6 +1007,17 @@ a {
   .hw-card-item p {
     font-size: 18px;
     line-height: 32px;
+  }
+
+  .hw-mobile-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .hw-mobile-btns a button {
+    width: 100%;
   }
 }
 
@@ -1143,6 +1158,15 @@ a {
     color: #fafafa;
   }
 
+  .tl-mobile-content {
+    margin-top: 8px;
+    display: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 22px;
+    color: #d0d5dd;
+  }
+
   .tl-btn {
     margin-top: 8px;
     font-family: "Open Sans";
@@ -1150,6 +1174,10 @@ a {
     font-size: 14px;
     line-height: 22px;
     color: #7dffaf;
+  }
+
+  #tl-less {
+    display: none;
   }
 }
 
