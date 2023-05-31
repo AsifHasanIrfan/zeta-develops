@@ -48,6 +48,7 @@ $(document).ready(function () {
   });
 });
 
+const accordionItems = document.getElementsByClassName("faq-accordion-item");
 $(document).ready(function () {
   $('.marketing-slider').slick({
     slidesToShow: 1.5,
@@ -60,7 +61,6 @@ $(document).ready(function () {
   });
 });
 
-const accordionItems = document.getElementsByClassName('faq-accordion-btn');
 const tlReadBtn = document.getElementsByClassName('tl-btn');
 const hamburger = document.querySelector('.humburger');
 
