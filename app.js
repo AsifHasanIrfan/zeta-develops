@@ -1,4 +1,16 @@
 // Slick Slider scripts
+
+$(document).ready(function () {
+  $('.cs-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    // centerMode: true,
+    arrows: false,
+    variableWidth: true,
+  });
+});
+
 $(document).ready(function () {
   $('.slider').slick({
     slidesToShow: 3,
@@ -26,6 +38,18 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.process-slider').slick({
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    // centerMode: true,
+    arrows: false,
+    // variableWidth: true
+  });
+});
+
+$(document).ready(function () {
+  $('.marketing-slider').slick({
     slidesToShow: 1.5,
     slidesToScroll: 1,
     dots: false,
