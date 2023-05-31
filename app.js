@@ -52,6 +52,35 @@ for (let i = 0; i < accordionItems.length; i++) {
   });
 }
 
+// See more and sow less scripts
+
+// Get all the cards on the page
+const cards = document.querySelectorAll('.slider-card');
+
+// Iterate over each card
+cards.forEach((card) => {
+  const content = card.querySelector('.more-content');
+  const seeMoreBtn = card.querySelector('#see-more');
+  const seeLessBtn = card.querySelector('#show-less');
+
+  // Hide the extra content initially
+  content.classList.add('collapsed');
+
+  // Show the full content when "See More" is clicked
+  seeMoreBtn.addEventListener('click', () => {
+    content.classList.remove('collapsed');
+    seeMoreBtn.style.display = 'none';
+    seeLessBtn.style.display = 'block';
+  });
+
+  // Hide the extra content when "See Less" is clicked
+  seeLessBtn.addEventListener('click', () => {
+    content.classList.add('collapsed');
+    seeMoreBtn.style.display = 'block';
+    seeLessBtn.style.display = 'none';
+  });
+});
+
 // for (let i = 0; i < tlReadBtn.length; i++) {
 //   tlReadBtn[i].addEventListener("click", function () {
 //     console.log(tlReadBtn[0].parentElement.children);

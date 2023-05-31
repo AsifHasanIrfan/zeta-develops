@@ -1784,6 +1784,19 @@ a {
 #utopia {
   margin-bottom: 150px !important;
 }
+/* more-content */
+.content-break {
+  display: block;
+  margin-top: 16px;
+}
+
+#show-less {
+  display: none;
+}
+
+.collapsed {
+  display: none;
+}
 
 .slider-header {
   display: flex;
@@ -1817,13 +1830,14 @@ a {
   cursor: pointer;
 }
 .slider-header .btn-live:hover {
-  color: rgb(81, 226, 136);
+  background: #329859;
+  color: #f2fff7;
 }
 
 .slider-card {
   background: #101828;
   max-width: 400px;
-  height: 500px;
+  min-height: 500px;
   border: 1px solid #667085;
   border-radius: 16px;
   padding: 24px;
@@ -1868,7 +1882,8 @@ a {
 }
 
 .slider-item {
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  margin-right: 24px;
   padding-left: 0px !important;
 }
 
@@ -1929,6 +1944,16 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .slider-header {
+    margin-bottom: 16px;
+  }
+  .slick-dots {
+    transform: translateY(16px);
+  }
+  .slider-item {
+    margin-right: 16px;
+  }
+
   #case-study #header {
     display: none;
   }
@@ -1952,6 +1977,7 @@ a {
   }
   #case-study section {
     margin-left: 20px;
+    margin-bottom: 64px;
   }
 
   .slider-card {
