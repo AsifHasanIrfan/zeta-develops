@@ -105,6 +105,29 @@ cards.forEach((card) => {
   });
 });
 
+
+const tlMobileCard = document.querySelectorAll(".tl-mobile-card");
+
+tlMobileCard.forEach((card) => {
+  const content = card.querySelector(".tl-mobile-content");
+  const readMoreBtn = card.querySelector("#tl-read-more");
+  const seeLessBtn = card.querySelector("#tl-less");
+
+  // Show the full content when "See More" is clicked
+  readMoreBtn.addEventListener("click", () => {
+    content.style.display = "block";
+    readMoreBtn.style.display = "none";
+    seeLessBtn.style.display = "block";
+  });
+
+  // Hide the extra content when "See Less" is clicked
+  seeLessBtn.addEventListener("click", () => {
+    content.style.display = "none";
+    readMoreBtn.style.display = "block";
+    seeLessBtn.style.display = "none";
+  });
+});
+
 // for (let i = 0; i < tlReadBtn.length; i++) {
 //   tlReadBtn[i].addEventListener("click", function () {
 //     console.log(tlReadBtn[0].parentElement.children);
