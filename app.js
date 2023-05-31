@@ -24,7 +24,19 @@ $(document).ready(function () {
   });
 });
 
-const accordionItems = document.getElementsByClassName("faq-accordion-item");
+$(document).ready(function () {
+  $('.process-slider').slick({
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    // centerMode: true,
+    arrows: false,
+    // variableWidth: true
+  });
+});
+
+const accordionItems = document.getElementsByClassName('faq-accordion-btn');
 const tlReadBtn = document.getElementsByClassName('tl-btn');
 const hamburger = document.querySelector('.humburger');
 
@@ -57,15 +69,3 @@ hamburger.onclick = function () {
   const nav = document.querySelector('.nav-wrapper');
   nav.classList.toggle('active');
 };
-
-// $(document).ready(function () {
-//   $(".process-slider").slick({
-//     slidesToShow: 1.5,
-//     slidesToScroll: 1,
-//     dots: false,
-//     Infinity: false,
-//     // centerMode: true,
-//     arrows: false,
-//     // variableWidth: true
-//   });
-// });
