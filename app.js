@@ -24,14 +24,14 @@ $(document).ready(function () {
   });
 });
 
-const accordionItems = document.getElementsByClassName('faq-accordion-btn');
+const accordionItems = document.getElementsByClassName("faq-accordion-item");
 const tlReadBtn = document.getElementsByClassName('tl-btn');
 const hamburger = document.querySelector('.humburger');
 
 for (let i = 0; i < accordionItems.length; i++) {
   accordionItems[i].addEventListener('click', function () {
     this.classList.toggle('active');
-    let panel = this.nextElementSibling;
+    let panel = this.lastElementChild;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
