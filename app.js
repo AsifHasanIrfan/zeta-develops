@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 });
 
-const accordionItems = document.getElementsByClassName('faq-accordion-btn');
+const accordionItems = document.getElementsByClassName("faq-accordion-item");
 const tlReadBtn = document.getElementsByClassName('tl-btn');
 const hamburger = document.querySelector('.humburger');
 
