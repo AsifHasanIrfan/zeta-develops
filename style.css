@@ -641,7 +641,7 @@ a {
   }
 
   .review-left .rating-number p {
-    font-family: "Nunito";
+    font-family: 'Nunito';
     font-size: 12px;
     line-height: 18px;
     color: #ecf2fe;
@@ -656,7 +656,7 @@ a {
   }
 
   .review-left h3 {
-    font-family: "DM Sans";
+    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -667,7 +667,7 @@ a {
   }
 
   .review-right h3 {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
@@ -719,7 +719,7 @@ a {
   }
 
   .single-testimonial-text {
-    font-family: "Nunito";
+    font-family: 'Nunito';
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -768,8 +768,9 @@ a {
 }
 
 .marketing-card img {
-  width: 548px;
+  /* width: 548px; */
   max-width: 100%;
+
   border-radius: 8px;
   margin: 0 auto;
 }
@@ -781,6 +782,55 @@ a {
   line-height: 34px;
   text-align: center;
   color: #fcfcfd;
+}
+
+.marketing-slider {
+  display: none;
+}
+
+.marketing-slider {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+  .marketing-cards {
+    display: none;
+  }
+  .marketing-slider {
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .marketing-wrapper {
+    padding: 16px 0;
+  }
+
+  .marketing-heading {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .marketing-slider {
+    margin-top: 24px;
+  }
+
+  .marketing-card {
+    /* max-width: 290px; */
+    padding: 12px;
+    padding-bottom: 40px;
+    height: 350px;
+  }
+
+  .marketing-card-content {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+  }
 }
 
 /*========== How works section styling ==========*/
@@ -1113,8 +1163,7 @@ a {
 }
 
 .process-card {
-  max-width: 612px;
-  /* max-width: 100%; */
+  width: 100%;
   background: #101828;
   border: 1px solid #98a2b3;
   border-radius: 16px;
@@ -1157,7 +1206,7 @@ a {
   margin-top: 48px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   .process-cards {
     display: none;
   }
@@ -1179,6 +1228,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .process-wrapper {
+    padding: 50px 0;
+  }
+
   .process-heading {
     font-size: 24px;
     line-height: 30px;
@@ -1191,7 +1244,7 @@ a {
   }
 
   .process-card {
-    max-width: 290px;
+    width: 100%;
     padding: 12px;
     padding-bottom: 40px;
   }
@@ -1201,9 +1254,6 @@ a {
     font-size: 14px;
     line-height: 22px;
     padding: 0;
-  }
-  .process-slider .slider-item {
-    /* width: auto !important; */
   }
 }
 
@@ -1974,6 +2024,19 @@ a {
 #utopia {
   margin-bottom: 150px !important;
 }
+/* more-content */
+.content-break {
+  display: block;
+  margin-top: 16px;
+}
+
+#show-less {
+  display: none;
+}
+
+.collapsed {
+  display: none;
+}
 
 .slider-header {
   display: flex;
@@ -2007,13 +2070,14 @@ a {
   cursor: pointer;
 }
 .slider-header .btn-live:hover {
-  color: rgb(81, 226, 136);
+  background: #329859;
+  color: #f2fff7;
 }
 
 .slider-card {
   background: #101828;
   max-width: 400px;
-  height: 500px;
+  min-height: 500px;
   border: 1px solid #667085;
   border-radius: 16px;
   padding: 24px;
@@ -2058,7 +2122,8 @@ a {
 }
 
 .slider-item {
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  margin-right: 24px;
   padding-left: 0px !important;
 }
 
@@ -2119,6 +2184,16 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .slider-header {
+    margin-bottom: 16px;
+  }
+  .slick-dots {
+    transform: translateY(16px);
+  }
+  .slider-item {
+    margin-right: 16px;
+  }
+
   #case-study #header {
     display: none;
   }
@@ -2142,6 +2217,7 @@ a {
   }
   #case-study section {
     margin-left: 20px;
+    margin-bottom: 64px;
   }
 
   .slider-card {
@@ -2167,3 +2243,115 @@ a {
 }
 
 /*=====  End of Case Study Page  ======*/
+
+/*=============================================
+=            Home page case Study Section            =
+=============================================*/
+
+.case-study-section {
+  background: #010610;
+  padding: 80px 0;
+}
+
+.case-study-section .cs-slider {
+  margin-left: 15px;
+}
+
+.case-study-section .cs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.case-study-section .cs-header h2 {
+  font-family: 'Open Sans';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.case-study-section .cs-header a {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.case-study-section .cs-header a:hover {
+  color: #7dffaf;
+}
+
+.case-study-section .content {
+  margin-top: 16px;
+}
+
+.case-study-section .content p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 26px;
+  color: #98a2b3;
+  padding-bottom: 8px;
+}
+
+.case-study-section .content h5 {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  line-height: 36px;
+  color: #fcfcfd;
+}
+
+.case-study-section .cs-slider .cs-item {
+  margin-right: 24px;
+}
+.case-study-section .cs-card img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .case-study-section {
+    padding: 64px 0;
+  }
+
+  .case-study-section .cs-header {
+    margin-bottom: 16px;
+  }
+
+  .case-study-section .cs-header h2 {
+    font-size: 24px;
+  }
+
+  .case-study-section .cs-header a {
+    font-size: 14px;
+  }
+
+  .case-study-section .cs-card {
+    max-width: 226px;
+  }
+
+  .case-study-section .content p {
+    font-size: 14px;
+    padding-bottom: 0;
+    line-height: 26px;
+  }
+
+  .case-study-section .content h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cs-slider {
+    padding-left: calc((100vw - 1248px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cs-slider {
+    padding-left: calc((100vw - 1140px) / 2);
+  }
+}
+
+/*=====  End of Home page case Study Section  ======*/
