@@ -5,32 +5,32 @@
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/assets/fonts/Satoshi-Black.otf');
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Black.otf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/assets/fonts/Satoshi-Bold.otf');
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/assets/fonts/Satoshi-Medium.otf');
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/assets/fonts/Satoshi-Regular.otf');
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  font-family: 'Barlow', 'Arges', sans-serif;
+  font-family: "Barlow", "Arges", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  font-family: 'Satoshi', 'Arges', sans-serif;
+  font-family: "Satoshi", "Arges", sans-serif;
 }
 
 a {
@@ -71,7 +71,7 @@ a {
 /*========== Button styling ==========*/
 .btn {
   /* width: 100%; */
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -153,7 +153,7 @@ a {
 }
 
 .nav-items ul li a {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 32px;
 }
@@ -162,7 +162,7 @@ a {
   background: #7dffaf;
   color: #010610;
   margin-left: 56px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -257,7 +257,7 @@ a {
 
 /*========== Hero section styling ==========*/
 .wlc-zeta {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -290,7 +290,7 @@ a {
 }
 
 .hero-desc {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   padding: 16px 0;
   font-size: 18px;
   line-height: 28px;
@@ -378,7 +378,7 @@ a {
 }
 
 .review-left h3 {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: 700;
   font-size: 48px;
   line-height: 65px;
@@ -421,7 +421,7 @@ a {
 }
 
 .rating-number p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -433,7 +433,7 @@ a {
 }
 
 .review-right h3 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -454,7 +454,7 @@ a {
 }
 
 .review-right-item p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 26px;
   color: #c7d9fc;
@@ -486,14 +486,14 @@ a {
 }
 
 .st-info-left p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 27px;
   color: #c7d9fc;
 }
 
 .st-author-name {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -502,7 +502,7 @@ a {
 
 .st-author-position {
   margin-top: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 22px;
   color: #c7d9fc;
@@ -510,7 +510,7 @@ a {
 
 .single-testimonial-text {
   margin-top: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 24px;
   line-height: 34px;
   color: #fcfcfd;
@@ -570,7 +570,7 @@ a {
 
 .multi-testimonial-text {
   margin-top: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 26px;
   color: #fcfcfd;
@@ -590,7 +590,7 @@ a {
 }
 
 .multi-testimonial-info .author-name {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -599,7 +599,7 @@ a {
 
 .multi-testimonial-info .author-position {
   margin-top: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 22px;
   color: #c7d9fc;
@@ -733,6 +733,21 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .review-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .review-icon img {
+    height: 16px;
+    width: 20px;
+  }
+
+  .review-icon svg {
+    height: 19px;
+    width: 19px;
+  }
 }
 
 /*========== Our marketing process section styling ==========*/
@@ -746,7 +761,7 @@ a {
 }
 
 .marketing-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -768,19 +783,69 @@ a {
 }
 
 .marketing-card img {
-  width: 548px;
+  /* width: 548px; */
   max-width: 100%;
+
   border-radius: 8px;
   margin: 0 auto;
 }
 
 .marketing-card-content {
   margin-top: 32px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 34px;
   text-align: center;
   color: #fcfcfd;
+}
+
+.marketing-slider {
+  display: none;
+}
+
+.marketing-slider {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 1200px) {
+  .marketing-cards {
+    display: none;
+  }
+  .marketing-slider {
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .marketing-wrapper {
+    padding: 16px 0;
+  }
+
+  .marketing-heading {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .marketing-slider {
+    margin-top: 24px;
+  }
+
+  .marketing-card {
+    /* max-width: 290px; */
+    padding: 12px;
+    padding-bottom: 40px;
+    height: 350px;
+  }
+
+  .marketing-card-content {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+  }
 }
 
 /*========== How works section styling ==========*/
@@ -795,7 +860,7 @@ a {
 
 .how-works-heading {
   max-width: 545px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 40px;
   line-height: 58px;
@@ -822,7 +887,7 @@ a {
 }
 
 .hw-item p {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -836,7 +901,7 @@ a {
   background: #1d2939;
   border-radius: 16px;
   padding: 64px 56px;
-  background-image: url('/assets/images/hw-bg.png');
+  background-image: url("/assets/images/hw-bg.png");
   background-position: bottom left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -856,7 +921,7 @@ a {
 
 .hw-bottom-card-left h2 {
   width: 535px;
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -876,7 +941,7 @@ a {
 }
 
 .hw-card-item p {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -896,7 +961,7 @@ a {
   }
 
   .how-works-heading {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-size: 24px;
     line-height: 30px;
     text-align: center;
@@ -913,7 +978,7 @@ a {
   }
 
   .hw-item p {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 14px;
     line-height: 22px;
     text-align: center;
@@ -948,7 +1013,7 @@ a {
 }
 
 .tl-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 56px;
   line-height: 80px;
@@ -1011,7 +1076,7 @@ a {
 }
 
 .tl-card-content h3 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -1020,7 +1085,7 @@ a {
 }
 
 .tl-card-content p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 24px;
   color: #eaeefd;
@@ -1049,7 +1114,7 @@ a {
   }
 
   .tl-heading {
-    font-family: 'DM Sans';
+    font-family: "DM Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -1071,7 +1136,7 @@ a {
   }
 
   .tl-mobile-card h4 {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -1080,7 +1145,7 @@ a {
 
   .tl-btn {
     margin-top: 8px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -1113,8 +1178,7 @@ a {
 }
 
 .process-card {
-  max-width: 612px;
-  /* max-width: 100%; */
+  width: 100%;
   background: #101828;
   border: 1px solid #98a2b3;
   border-radius: 16px;
@@ -1128,7 +1192,7 @@ a {
 
 .process-card-content {
   margin-top: 32px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 34px;
   text-align: center;
@@ -1136,7 +1200,7 @@ a {
 }
 
 .process-heading {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 48px;
   line-height: 65px;
@@ -1150,6 +1214,7 @@ a {
 
 .process-btn button {
   padding: 8px 76.5px;
+  margin: 0 auto;
 }
 
 .process-slider {
@@ -1157,7 +1222,7 @@ a {
   margin-top: 48px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   .process-cards {
     display: none;
   }
@@ -1179,6 +1244,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .process-wrapper {
+    padding: 50px 0;
+  }
+
   .process-heading {
     font-size: 24px;
     line-height: 30px;
@@ -1191,7 +1260,7 @@ a {
   }
 
   .process-card {
-    max-width: 290px;
+    width: 100%;
     padding: 12px;
     padding-bottom: 40px;
   }
@@ -1201,9 +1270,6 @@ a {
     font-size: 14px;
     line-height: 22px;
     padding: 0;
-  }
-  .process-slider .slider-item {
-    /* width: auto !important; */
   }
 }
 
@@ -1234,14 +1300,14 @@ a {
 .faq-left h2 {
   margin-top: 19px;
   margin-bottom: 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 500;
   font-size: 36px;
   line-height: 49px;
 }
 
 .faq-left p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.7);
@@ -1287,7 +1353,7 @@ a {
 }
 
 .faq-accordion-title {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
@@ -1300,7 +1366,7 @@ a {
 }
 
 .faq-accordion-body p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.7);
@@ -1331,13 +1397,13 @@ a {
   }
 
   .faq-left p {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 14px;
     line-height: 22px;
   }
 
   .faq-accordion-title {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -1348,7 +1414,7 @@ a {
   }
 
   .faq-accordion-body p {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 14px;
     line-height: 22px;
   }
@@ -1375,14 +1441,14 @@ a {
   border-radius: 16px;
   padding: 42px;
   padding-bottom: 62px;
-  background-image: url('/assets/images/booking-bg.png');
+  background-image: url("/assets/images/booking-bg.png");
   background-position: bottom left;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .booking-content h3 {
-  font-family: 'font1';
+  font-family: "font1";
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -1391,7 +1457,7 @@ a {
 }
 
 .booking-content p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 32px;
   color: #e4e7ec;
@@ -1463,7 +1529,7 @@ a {
     right: 0;
     left: 0;
     display: block;
-    background-image: url('/assets/images/booking-mb-bg.png');
+    background-image: url("/assets/images/booking-mb-bg.png");
     height: 134px;
     width: 100%;
     background-repeat: no-repeat;
@@ -1527,7 +1593,7 @@ a {
 }
 
 .newsletter-container h2 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -1553,7 +1619,7 @@ a {
 
 .newsletter-input input::placeholder,
 .newsletter-input input {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -1585,7 +1651,7 @@ a {
     max-width: 335px;
   }
   .newsletter-container h2 {
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
@@ -1641,7 +1707,7 @@ a {
 
 .footer-social a {
   padding: 8px 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
 }
 
@@ -1653,13 +1719,13 @@ a {
 }
 
 .footer-menu a {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 16px;
   line-height: 24px;
 }
 
 .copyright-text {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 26px;
   text-align: right;
@@ -1716,7 +1782,7 @@ a {
 
   .footer-mb-social a,
   .footer-mb-menu a {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -1724,7 +1790,7 @@ a {
 
   .copyright-mb-text {
     display: block;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-size: 12px;
     line-height: 18px;
     text-align: center;
@@ -1856,7 +1922,7 @@ a {
 
 .contact-form .field input::placeholder,
 .contact-form textarea::placeholder {
-  font-family: 'Barlow', 'Arges', sans-serif;
+  font-family: "Barlow", "Arges", sans-serif;
   font-size: 16px;
   color: #475467;
 }
@@ -1930,14 +1996,14 @@ a {
 } */
 
 @font-face {
-  font-family: 'font1';
-  src: url('./assets/Satoshi-Bold.otf');
+  font-family: "font1";
+  src: url("./assets/Satoshi-Bold.otf");
   font-weight: 700;
 }
 
 #case-study #header h1 {
   font-size: 72px;
-  font-family: 'font1';
+  font-family: "font1";
   text-align: center;
   background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
   -webkit-background-clip: text;
@@ -1974,6 +2040,19 @@ a {
 #utopia {
   margin-bottom: 150px !important;
 }
+/* more-content */
+.content-break {
+  display: block;
+  margin-top: 16px;
+}
+
+#show-less {
+  display: none;
+}
+
+.collapsed {
+  display: none;
+}
 
 .slider-header {
   display: flex;
@@ -1987,7 +2066,7 @@ a {
 }
 
 .slider-header h2 {
-  font-family: 'font1';
+  font-family: "font1";
   font-weight: 700;
   font-size: 48px;
 }
@@ -2000,20 +2079,21 @@ a {
   height: 44px;
   background: rgba(125, 255, 175, 0.1);
   border-radius: 8px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   color: #7dffaf;
   cursor: pointer;
 }
 .slider-header .btn-live:hover {
-  color: rgb(81, 226, 136);
+  background: #329859;
+  color: #f2fff7;
 }
 
 .slider-card {
   background: #101828;
   max-width: 400px;
-  height: 500px;
+  min-height: 500px;
   border: 1px solid #667085;
   border-radius: 16px;
   padding: 24px;
@@ -2028,7 +2108,7 @@ a {
 .slider-card .content h4 {
   padding-top: 24px;
   padding-bottom: 18px;
-  font-family: 'font1';
+  font-family: "font1";
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -2036,7 +2116,7 @@ a {
 }
 
 .slider-card .content p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -2045,7 +2125,7 @@ a {
 }
 
 .slider-card .content .btn-see-more {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   color: #7dffaf;
@@ -2058,7 +2138,8 @@ a {
 }
 
 .slider-item {
-  margin: 0 10px;
+  /* margin: 0 10px; */
+  margin-right: 24px;
   padding-left: 0px !important;
 }
 
@@ -2119,6 +2200,16 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .slider-header {
+    margin-bottom: 16px;
+  }
+  .slick-dots {
+    transform: translateY(16px);
+  }
+  .slider-item {
+    margin-right: 16px;
+  }
+
   #case-study #header {
     display: none;
   }
@@ -2142,6 +2233,7 @@ a {
   }
   #case-study section {
     margin-left: 20px;
+    margin-bottom: 64px;
   }
 
   .slider-card {
@@ -2167,3 +2259,115 @@ a {
 }
 
 /*=====  End of Case Study Page  ======*/
+
+/*=============================================
+=            Home page case Study Section            =
+=============================================*/
+
+.case-study-section {
+  background: #010610;
+  padding: 80px 0;
+}
+
+.case-study-section .cs-slider {
+  margin-left: 15px;
+}
+
+.case-study-section .cs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.case-study-section .cs-header h2 {
+  font-family: "Open Sans";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.case-study-section .cs-header a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.case-study-section .cs-header a:hover {
+  color: #7dffaf;
+}
+
+.case-study-section .content {
+  margin-top: 16px;
+}
+
+.case-study-section .content p {
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 26px;
+  color: #98a2b3;
+  padding-bottom: 8px;
+}
+
+.case-study-section .content h5 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 36px;
+  color: #fcfcfd;
+}
+
+.case-study-section .cs-slider .cs-item {
+  margin-right: 24px;
+}
+.case-study-section .cs-card img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .case-study-section {
+    padding: 64px 0;
+  }
+
+  .case-study-section .cs-header {
+    margin-bottom: 16px;
+  }
+
+  .case-study-section .cs-header h2 {
+    font-size: 24px;
+  }
+
+  .case-study-section .cs-header a {
+    font-size: 14px;
+  }
+
+  .case-study-section .cs-card {
+    max-width: 226px;
+  }
+
+  .case-study-section .content p {
+    font-size: 14px;
+    padding-bottom: 0;
+    line-height: 26px;
+  }
+
+  .case-study-section .content h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cs-slider {
+    padding-left: calc((100vw - 1248px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cs-slider {
+    padding-left: calc((100vw - 1140px) / 2);
+  }
+}
+
+/*=====  End of Home page case Study Section  ======*/
