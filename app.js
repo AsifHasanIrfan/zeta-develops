@@ -43,7 +43,7 @@ const hamburger = document.querySelector('.humburger');
 for (let i = 0; i < accordionItems.length; i++) {
   accordionItems[i].addEventListener('click', function () {
     this.classList.toggle('active');
-    let panel = this.nextElementSibling;
+    let panel = this.lastElementChild;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
