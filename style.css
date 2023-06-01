@@ -215,14 +215,14 @@ a {
     left: 0;
     right: 0;
     width: 100%;
-    background: #1b376c;
+    background: rgba(255, 255, 255, 0.1);
     transition: 0.3s;
     height: 0px;
     overflow: hidden;
   }
 
   .active .nav-items {
-    height: 300px;
+    height: 100svh;
   }
 
   .humburger-close {
@@ -279,6 +279,11 @@ a {
   overflow: hidden;
 }
 
+.hero-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-title {
   background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
   -webkit-background-clip: text;
@@ -300,7 +305,7 @@ a {
 
 .hero-right-img {
   display: none;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -309,7 +314,7 @@ a {
 }
 
 .hero-btns {
-  margin-top: 72px;
+  margin-top: 16px;
   display: flex;
   gap: 24px;
 }
@@ -318,6 +323,67 @@ a {
   .hero-btns .btn {
     padding: 16px 25px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .wlc-zeta {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 4px 0;
+    width: 175px;
+  }
+
+  .hero-btns .btn {
+    padding: 16px 25px;
+    width: 100%;
+  }
+
+  .hero-btns {
+    margin-top: 56px;
+    flex-direction: column;
+  }
+
+  .hero-desc {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+  }
+
+  .hero-wrapper .col-md-6 {
+    padding: 0 20px;
+  }
+}
+
+.top-gradient {
+  position: absolute;
+  width: 228px;
+  height: 228px;
+  right: -60px;
+  top: -30px;
+  background: rgba(122, 119, 255, 0.8);
+  filter: blur(148px);
+  z-index: 1;
+}
+
+.bottom-gradient {
+  position: absolute;
+  width: 184px;
+  height: 184px;
+  right: -60px;
+  bottom: 55px;
+  background: #1087dd;
+  filter: blur(125px);
+}
+
+.top-inner-gradient {
+  position: absolute;
+  width: 184px;
+  height: 184px;
+  left: -72px;
+  top: 232px;
+  background: #1087dd;
+  filter: blur(125px);
 }
 
 @media screen and (min-width: 768px) {
@@ -622,6 +688,10 @@ a {
 } */
 
 @media screen and (max-width: 767px) {
+  .reviews-wrapper .container {
+    padding: 0 20px;
+  }
+
   .review-left {
     display: flex;
     justify-content: space-between;
@@ -994,6 +1064,9 @@ a {
 
   .hw-bottom-card {
     padding: 24px 17px;
+    margin-top: 32px;
+    border: 1px solid #475467;
+    margin-bottom: -270px;
   }
 
   .hw-card-item {
@@ -1025,6 +1098,10 @@ a {
 .timeline-wrapper {
   padding-top: 230px;
   background: #010610;
+}
+
+.timeline-wrapper .container {
+  padding: 0;
 }
 
 .tl-heading {
@@ -1119,6 +1196,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .timeline-wrapper {
+    padding-top: 305px;
+  }
+
   .tl-item-container {
     display: none;
   }
@@ -1126,6 +1207,7 @@ a {
   .tl-mobile-inner {
     display: block;
     padding: 0 20px;
+    padding-bottom: 16px;
   }
 
   .tl-heading {
@@ -1168,6 +1250,7 @@ a {
   }
 
   .tl-btn {
+    width: max-content;
     margin-top: 8px;
     font-family: "Open Sans";
     font-weight: 500;
@@ -1301,6 +1384,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .process-wrapper {
+    padding: 40px 0;
+  }
+}
+
 /*========== FAQ section styling ==========*/
 .faq-wrapper {
   background-color: #010610;
@@ -1422,6 +1511,7 @@ a {
   .faq-left h2 {
     font-size: 24px;
     line-height: 30px;
+    margin-top: 0;
   }
 
   .faq-left p {
@@ -1829,14 +1919,15 @@ a {
 }
 
 /*================ Responsive media queries =================*/
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1248px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1248px;
   }
 }
 
@@ -2356,7 +2447,19 @@ a {
 
 @media screen and (max-width: 767px) {
   .case-study-section {
-    padding: 64px 0;
+    padding: 40px 0;
+  }
+
+  .case-study-section .cs-slider .cs-item {
+    margin-right: 16px;
+  }
+
+  .cs-contents .container {
+    padding: 0 20px;
+  }
+
+  .case-study-section .cs-slider {
+    margin-left: 20px;
   }
 
   .case-study-section .cs-header {
@@ -2365,10 +2468,12 @@ a {
 
   .case-study-section .cs-header h2 {
     font-size: 24px;
+    line-height: 30px;
   }
 
   .case-study-section .cs-header a {
     font-size: 14px;
+    line-height: 22px;
   }
 
   .case-study-section .cs-card {
@@ -2383,6 +2488,7 @@ a {
 
   .case-study-section .content h5 {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 
