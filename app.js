@@ -23,13 +23,13 @@ $(document).ready(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1,
         },
       },
     ],
@@ -48,7 +48,7 @@ $(document).ready(function () {
   });
 });
 
-const accordionItems = document.getElementsByClassName("faq-accordion-item");
+const accordionItems = document.getElementsByClassName('faq-accordion-item');
 $(document).ready(function () {
   $('.marketing-slider').slick({
     slidesToShow: 1.5,
@@ -84,14 +84,15 @@ const cards = document.querySelectorAll('.slider-card');
 // Iterate over each card
 cards.forEach((card) => {
   const content = card.querySelector('.more-content');
-  const seeMoreBtn = card.querySelector('#see-more');
-  const seeLessBtn = card.querySelector('#show-less');
+  const seeMoreBtn = card.querySelector('.see-more');
+  const seeLessBtn = card.querySelector('.show-less');
 
   // Hide the extra content initially
   content.classList.add('collapsed');
 
   // Show the full content when "See More" is clicked
   seeMoreBtn.addEventListener('click', () => {
+    console.log('more');
     content.classList.remove('collapsed');
     seeMoreBtn.style.display = 'none';
     seeLessBtn.style.display = 'block';
@@ -99,32 +100,32 @@ cards.forEach((card) => {
 
   // Hide the extra content when "See Less" is clicked
   seeLessBtn.addEventListener('click', () => {
+    console.log('less');
     content.classList.add('collapsed');
     seeMoreBtn.style.display = 'block';
     seeLessBtn.style.display = 'none';
   });
 });
 
-
-const tlMobileCard = document.querySelectorAll(".tl-mobile-card");
+const tlMobileCard = document.querySelectorAll('.tl-mobile-card');
 
 tlMobileCard.forEach((card) => {
-  const content = card.querySelector(".tl-mobile-content");
-  const readMoreBtn = card.querySelector("#tl-read-more");
-  const seeLessBtn = card.querySelector("#tl-less");
+  const content = card.querySelector('.tl-mobile-content');
+  const readMoreBtn = card.querySelector('#tl-read-more');
+  const seeLessBtn = card.querySelector('#tl-less');
 
   // Show the full content when "See More" is clicked
-  readMoreBtn.addEventListener("click", () => {
-    content.style.display = "block";
-    readMoreBtn.style.display = "none";
-    seeLessBtn.style.display = "block";
+  readMoreBtn.addEventListener('click', () => {
+    content.style.display = 'block';
+    readMoreBtn.style.display = 'none';
+    seeLessBtn.style.display = 'block';
   });
 
   // Hide the extra content when "See Less" is clicked
-  seeLessBtn.addEventListener("click", () => {
-    content.style.display = "none";
-    readMoreBtn.style.display = "block";
-    seeLessBtn.style.display = "none";
+  seeLessBtn.addEventListener('click', () => {
+    content.style.display = 'none';
+    readMoreBtn.style.display = 'block';
+    seeLessBtn.style.display = 'none';
   });
 });
 
