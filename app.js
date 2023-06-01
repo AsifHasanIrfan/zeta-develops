@@ -178,6 +178,12 @@ tlMobileCard.forEach((card) => {
 hamburger.onclick = function () {
   const nav = document.querySelector('.nav-wrapper');
   nav.classList.toggle('active');
+
+  if (nav.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
 };
 
 const modal = document.getElementById('review-modal');
