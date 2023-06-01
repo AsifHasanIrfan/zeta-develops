@@ -215,7 +215,7 @@ a {
     left: 0;
     right: 0;
     width: 100%;
-    background: #1b376c;
+    background: #101828;
     transition: 0.3s;
     height: 0px;
     overflow: hidden;
@@ -312,11 +312,41 @@ a {
   margin-top: 72px;
   display: flex;
   gap: 24px;
+  position: relative;
+  z-index: 9;
+}
+
+#review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+#review-modal .contact-form {
+  border: 1px solid #475467;
 }
 
 @media screen and (max-width: 1199px) {
   .hero-btns .btn {
     padding: 16px 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #review-modal {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7.5px);
+  }
+  #review-modal .contact-form {
+    border: 1px solid #98a2b3;
   }
 }
 
@@ -577,7 +607,7 @@ a {
 }
 
 .multi-testimonials-card {
-  max-width: 100%;
+  /* max-width: 100%; */
   background: #1d2939;
   border: 1px solid #344054;
   border-radius: 8px;
@@ -615,13 +645,84 @@ a {
   display: none;
 }
 
-/* @media screen and (max-width: 1199px) {
-  .review-right {
-  max-width: 600px;
+.testimonial-slider {
+  display: none;
+  margin-top: 40px;
 }
-} */
+
+.testimonial-slider .ts-item {
+  max-width: 397px;
+  margin-right: 16px;
+}
+
+.review-icons-mobile {
+  display: none;
+  max-width: 120px;
+}
+
+.review-icons-mobile .ri-item {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .multi-testimonials {
+    display: none;
+  }
+
+  .testimonial-slider {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 767px) {
+  .review-icons {
+    display: none;
+  }
+
+  .review-icons-mobile {
+    display: block;
+  }
+
+  .multi-testimonials-content {
+    padding: 16px;
+  }
+  .multi-testimonial-text {
+    font-family: 'Nunito';
+
+    font-size: 14px;
+    line-height: 22px;
+    color: #fcfcfd;
+  }
+
+  .info-inner {
+    gap: 8px;
+  }
+  .info-inner img {
+    width: 24px;
+    height: 24px;
+  }
+  .info-inner .author-name {
+    font-family: 'Nunito';
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .multi-testimonial-info img {
+    width: 80px;
+  }
+  .multi-testimonial-info {
+    padding: 16px;
+  }
+
+  .multi-testimonial-info .author-position {
+    font-family: 'Nunito';
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .testimonial-slider .ts-item {
+    max-width: 279px;
+    margin-right: 16px;
+  }
   .review-left {
     display: flex;
     justify-content: space-between;

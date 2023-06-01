@@ -62,10 +62,16 @@
 
           <div class="nav-items">
             <ul>
+              <li><a href="/">Home</a></li>
               <li><a href="./case-study.html">Case studies</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <button class="btn menu-btn">Book a free review</button>
+
+            <div class="nav-btns">
+              <button class="btn btn-primary" id="review-btn">
+                Book a Free website review
+              </button>
+            </div>
           </div>
 
           <div class="humburger">
@@ -130,14 +136,10 @@
                 increasing conversion rates and raising customer satisfaction.
               </p>
               <div class="hero-btns">
-                <a
-                  target="_blank"
-                  href="https://calendly.com/zetadevelops/30min"
-                >
-                  <button class="btn btn-primary">
-                    Book a Free website review
-                  </button>
-                </a>
+                <button class="btn btn-primary" id="review-btn">
+                  Book a Free website review
+                </button>
+
                 <a
                   target="_blank"
                   href="https://calendly.com/zetadevelops/website-discussion-call"
@@ -159,6 +161,37 @@
         <div class="bottom-inner-gradient"></div>
         <div class="top-gradient"></div>
         <div class="top-inner-gradient"></div>
+
+        <!-- Review Modal -->
+        <div id="review-modal">
+          <div class="review-form">
+            <div class="contact-form">
+              <form action="">
+                <div class="field">
+                  <label for="name">What is your name?</label>
+                  <input type="text" id="name" placeholder="Type here" />
+                </div>
+                <div class="field">
+                  <label for="email">What is your email address?</label>
+                  <input type="email" id="email" placeholder="Type here" />
+                </div>
+                <div class="msg">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    placeholder="Type here"
+                  ></textarea>
+                </div>
+
+                <div class="button">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
       <!------------- Hero section end --------------->
 
@@ -341,6 +374,87 @@
                     </svg>
                   </span>
                 </div>
+                <div class="review-icons-mobile">
+                  <div class="review-icons-slider">
+                    <div class="ri-item">
+                      <span class="review-icon"
+                        ><svg
+                          width="25"
+                          height="30"
+                          viewBox="0 0 25 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.3999 0.599976C2.3999 6.35545 2.3999 10.8141 2.3999 14.2216M2.3999 14.2216C2.3999 27.7728 2.3999 24.6988 2.3999 20.4486L2.3999 14.2216ZM2.3999 14.2216L15.3305 12.8594M15.3305 14.2216V0.599976V12.8594M15.3305 25.1189V12.8594"
+                            stroke="#56ABC6"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M2.3999 0.599976C2.3999 6.35545 2.3999 10.8141 2.3999 14.2216M2.3999 14.2216C2.3999 27.7728 2.3999 24.6988 2.3999 20.4486L2.3999 14.2216ZM2.3999 14.2216L15.3305 12.8594M15.3305 14.2216V0.599976V12.8594M15.3305 25.1189V12.8594"
+                            stroke="white"
+                            stroke-opacity="0.4"
+                            stroke-width="3"
+                          />
+                          <path
+                            d="M9.33057 4.88104C9.33057 10.6365 9.33057 15.0952 9.33057 18.5027M9.33057 18.5027C9.33057 32.0538 9.33057 28.9799 9.33057 24.7297L9.33057 18.5027ZM9.33057 18.5027L22.2612 17.1405M22.2612 18.5027V4.88104V17.1405M22.2612 29.4V17.1405"
+                            stroke="white"
+                            stroke-width="5"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="ri-item">
+                      <span class="review-icon">
+                        <img src="./assets/images/review-2.png" alt="icon" />
+                      </span>
+                    </div>
+                    <div class="ri-item">
+                      <span class="review-icon"
+                        ><svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M21.8486 8.15165C22.3172 8.62027 22.3172 9.38006 21.8486 9.8487L8.64863 23.0487C8.17999 23.5174 7.4202 23.5174 6.95157 23.0487C6.48294 22.5801 6.48294 21.8202 6.95157 21.3516L20.1516 8.15165C20.6202 7.68301 21.38 7.68301 21.8486 8.15165Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M21.0001 16.1999V8.99989H13.8001C13.1373 8.99989 12.6001 8.46264 12.6001 7.79989C12.6001 7.13715 13.1373 6.59989 13.8001 6.59989L21.0474 6.59988C21.2873 6.59972 21.5727 6.59954 21.8184 6.63255C22.1148 6.67242 22.5249 6.77911 22.8729 7.1271C23.2209 7.47508 23.3276 7.88517 23.3675 8.18163C23.4005 8.42721 23.4002 8.71276 23.4001 8.95261V16.1999C23.4001 16.8626 22.8629 17.3999 22.2001 17.3999C21.5373 17.3999 21.0001 16.8626 21.0001 16.1999Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="ri-item">
+                      <span class="review-icon"
+                        ><svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M21.8486 8.15165C22.3172 8.62027 22.3172 9.38006 21.8486 9.8487L8.64863 23.0487C8.17999 23.5174 7.4202 23.5174 6.95157 23.0487C6.48294 22.5801 6.48294 21.8202 6.95157 21.3516L20.1516 8.15165C20.6202 7.68301 21.38 7.68301 21.8486 8.15165Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M21.0001 16.1999V8.99989H13.8001C13.1373 8.99989 12.6001 8.46264 12.6001 7.79989C12.6001 7.13715 13.1373 6.59989 13.8001 6.59989L21.0474 6.59988C21.2873 6.59972 21.5727 6.59954 21.8184 6.63255C22.1148 6.67242 22.5249 6.77911 22.8729 7.1271C23.2209 7.47508 23.3276 7.88517 23.3675 8.18163C23.4005 8.42721 23.4002 8.71276 23.4001 8.95261V16.1999C23.4001 16.8626 22.8629 17.3999 22.2001 17.3999C21.5373 17.3999 21.0001 16.8626 21.0001 16.1999Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="review-right">
@@ -423,7 +537,7 @@
                 </div>
               </div>
 
-              <!-- <div class="multi-testimonials">
+              <div class="multi-testimonials">
                 <div class="multi-testimonials-card">
                   <div class="multi-testimonials-content">
                     <img src="./assets/images/small-quate.svg" alt="quote" />
@@ -497,7 +611,89 @@
                     />
                   </div>
                 </div>
-              </div> -->
+              </div>
+
+              <div class="testimonial-slider">
+                <div class="ts-item">
+                  <div class="multi-testimonials-card">
+                    <div class="multi-testimonials-content">
+                      <img src="./assets/images/small-quate.svg" alt="quote" />
+                      <p class="multi-testimonial-text">
+                        This service entirely changed the way we went about
+                        getting new members. We honed in on exactly who we want
+                        to join us
+                      </p>
+                    </div>
+                    <div class="multi-border"></div>
+                    <div class="multi-testimonial-info">
+                      <div class="info-inner">
+                        <img src="./assets/images/mt-author.png" alt="author" />
+                        <div>
+                          <p class="author-name">Ikiyoyo Bujutsu</p>
+                          <p class="author-position">CEO</p>
+                        </div>
+                      </div>
+
+                      <img
+                        src="./assets/images/small-five-star.svg"
+                        alt="rating"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-item">
+                  <div class="multi-testimonials-card">
+                    <div class="multi-testimonials-content">
+                      <img src="./assets/images/small-quate.svg" alt="quote" />
+                      <p class="multi-testimonial-text">
+                        This service entirely changed the way we went about
+                        getting new members. We honed in on exactly who we want
+                        to join us
+                      </p>
+                    </div>
+                    <div class="multi-border"></div>
+                    <div class="multi-testimonial-info">
+                      <div class="info-inner">
+                        <img src="./assets/images/mt-author.png" alt="author" />
+                        <div>
+                          <p class="author-name">Ikiyoyo Bujutsu</p>
+                          <p class="author-position">CEO</p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/images/small-four-star.svg"
+                        alt="rating"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-item">
+                  <div class="multi-testimonials-card">
+                    <div class="multi-testimonials-content">
+                      <img src="./assets/images/small-quate.svg" alt="quote" />
+                      <p class="multi-testimonial-text">
+                        This service entirely changed the way we went about
+                        getting new members. We honed in on exactly who we want
+                        to join us
+                      </p>
+                    </div>
+                    <div class="multi-border"></div>
+                    <div class="multi-testimonial-info">
+                      <div class="info-inner">
+                        <img src="./assets/images/mt-author.png" alt="author" />
+                        <div>
+                          <p class="author-name">Ikiyoyo Bujutsu</p>
+                          <p class="author-position">CEO</p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/images/small-five-star.svg"
+                        alt="rating"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -12,6 +12,39 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $('.review-icons-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    // centerMode: true,
+    arrows: false,
+    variableWidth: true,
+  });
+});
+
+$(document).ready(function () {
+  $('.testimonial-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    // centerMode: true,
+    infinite: true,
+
+    arrows: false,
+    variableWidth: true,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
   $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -145,4 +178,20 @@ tlMobileCard.forEach((card) => {
 hamburger.onclick = function () {
   const nav = document.querySelector('.nav-wrapper');
   nav.classList.toggle('active');
+};
+
+const modal = document.getElementById('review-modal');
+
+const reviewBtn = document.getElementById('review-btn');
+
+reviewBtn.addEventListener('click', () => {
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
 };
