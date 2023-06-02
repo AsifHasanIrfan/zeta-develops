@@ -1241,7 +1241,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .how-works-wrapper {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     padding-top: 24px;
   }
 
@@ -1423,7 +1423,7 @@ a {
 
   .tl-mobile-inner {
     display: block;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     padding-bottom: 16px;
   }
 
@@ -1464,6 +1464,18 @@ a {
     font-size: 14px;
     line-height: 22px;
     color: #d0d5dd;
+  }
+
+  .initial-open .tl-mobile-content {
+    display: block
+  }
+
+  .initial-open #tl-less {
+    display: block
+  }
+
+  .initial-open #tl-read-more {
+    display: none;
   }
 
   .tl-btn {
@@ -1569,15 +1581,16 @@ a {
   .process-slider .process-card {
     width: 690px;
   }
+
+  .process-wrapper .container {
+    padding: 0;
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .process-wrapper {
     padding: 40px 0;
-  }
-
-  .process-wrapper .container {
-    padding: 0 20px;
   }
 
   .process-slider .process-card {
@@ -2385,7 +2398,7 @@ a {
 #case-study #three,
 #case-study #ikiyoyo,
 #case-study #utopia {
-  margin-left: 6.66%;
+  /* margin-left: 6.66%; */
   margin-bottom: 100px;
 }
 
@@ -2523,7 +2536,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   #case-study section {
-    margin-left: 4%;
+    margin-left: 20px;
   }
 }
 
@@ -2748,13 +2761,13 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .cs-slider {
+  .cs-slider, #three, #ikiyoyo, #utopia {
     padding-left: calc((100vw - 1140px) / 2);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .cs-slider {
+  .cs-slider, #three, #ikiyoyo, #utopia {
     padding-left: calc((100vw - 1248px) / 2);
   }
 }
