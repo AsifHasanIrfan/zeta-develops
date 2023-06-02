@@ -77,7 +77,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
   });
 });
 
@@ -90,7 +90,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
   });
 });
 
@@ -188,16 +188,40 @@ hamburger.onclick = function () {
 
 const modal = document.getElementById('review-modal');
 
-const reviewBtn = document.querySelector('.review-btn');
+const reviewBtns = document.querySelectorAll('.review-btn');
 
-reviewBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
+reviewBtns.forEach((reviewBtn) => {
+  reviewBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+let isOpenVM = false;
+
+const videoModal = document.getElementById('video-modal');
+
+const vidoeOpenBtn = document.querySelector('.st-play-icon');
+
+const vidoeOpenBtnMob = document.querySelector('.st-play-small');
+
+vidoeOpenBtn.addEventListener('click', () => {
+  videoModal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+});
+
+vidoeOpenBtnMob.addEventListener('click', () => {
+  isOpenVM = true;
+  console.log(isOpenVM);
+  videoModal.style.display = 'flex';
 });
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  } else if (event.target == videoModal) {
+    videoModal.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
 };
