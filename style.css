@@ -156,6 +156,11 @@ a {
   font-family: "Open Sans";
   font-size: 18px;
   line-height: 32px;
+  transition: all 0.3s;
+}
+
+.nav-items ul li a:hover {
+  color: #7DFFAF;
 }
 
 .menu-btn {
@@ -1467,11 +1472,11 @@ a {
   }
 
   .initial-open .tl-mobile-content {
-    display: block
+    display: block;
   }
 
   .initial-open #tl-less {
-    display: block
+    display: block;
   }
 
   .initial-open #tl-read-more {
@@ -1596,6 +1601,15 @@ a {
   .process-slider .process-card {
     width: 490px;
   }
+
+  .process-btn {
+    margin-top: 16px;
+  }
+
+  .process-btn button {
+    padding: 13px 57px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1616,8 +1630,9 @@ a {
 
   .process-card {
     width: 290px !important;
+    height: 385px !important;
     padding: 12px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
   }
 
   .process-card-content {
@@ -2075,6 +2090,11 @@ a {
   padding: 8px 16px;
   font-family: "Open Sans";
   font-size: 18px;
+  transition: all 0.3s;
+}
+
+.footer-social a:hover {
+  color: #7DFFAF;
 }
 
 .footer-menu {
@@ -2088,6 +2108,11 @@ a {
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 24px;
+  transition: all 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #7DFFAF;
 }
 
 .copyright-text {
@@ -2761,13 +2786,19 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .cs-slider, #three, #ikiyoyo, #utopia {
+  .cs-slider,
+  #three,
+  #ikiyoyo,
+  #utopia {
     padding-left: calc((100vw - 1140px) / 2);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .cs-slider, #three, #ikiyoyo, #utopia {
+  .cs-slider,
+  #three,
+  #ikiyoyo,
+  #utopia {
     padding-left: calc((100vw - 1248px) / 2);
   }
 }
