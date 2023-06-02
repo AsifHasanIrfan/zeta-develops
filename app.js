@@ -77,7 +77,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    // variableWidth: true
+    variableWidth: true
   });
 });
 
@@ -90,7 +90,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    // variableWidth: true
+    variableWidth: true
   });
 });
 
@@ -188,7 +188,7 @@ hamburger.onclick = function () {
 
 const modal = document.getElementById('review-modal');
 
-const reviewBtn = document.getElementById('review-btn');
+const reviewBtn = document.querySelector('.review-btn');
 
 reviewBtn.addEventListener('click', () => {
   modal.style.display = 'flex';
