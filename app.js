@@ -188,16 +188,21 @@ hamburger.onclick = function () {
 
 const modal = document.getElementById('review-modal');
 
-const reviewBtn = document.getElementById('review-btn');
+const reviewBtns = document.querySelectorAll('.review-btn');
 
-reviewBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+reviewBtns.forEach((reviewBtn) => {
+  const btn = reviewBtn.querySelector('.reviewBtn');
+
+  reviewBtn.addEventListener('click', () => {
+    console.log('clicked');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  };
 });
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-};
