@@ -77,7 +77,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    // variableWidth: true
+    variableWidth: true,
   });
 });
 
@@ -90,7 +90,7 @@ $(document).ready(function () {
     infinite: false,
     // centerMode: true,
     arrows: false,
-    // variableWidth: true
+    variableWidth: true,
   });
 });
 
