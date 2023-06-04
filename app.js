@@ -3,10 +3,11 @@
 $(document).ready(function () {
   $('.cs-slider').slick({
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 'auto',
     dots: false,
     // centerMode: true,
     arrows: false,
+    // swipeToSlide: true,
     variableWidth: true,
   });
 });
@@ -52,6 +53,7 @@ $(document).ready(function () {
     // centerMode: true,
     arrows: false,
     variableWidth: true,
+
     responsive: [
       {
         breakpoint: 1200,
@@ -152,6 +154,7 @@ tlMobileCard.forEach((card) => {
     content.style.display = 'block';
     readMoreBtn.style.display = 'none';
     seeLessBtn.style.display = 'block';
+    card.classList.add('active');
   });
 
   // Hide the extra content when "See Less" is clicked
@@ -159,6 +162,8 @@ tlMobileCard.forEach((card) => {
     content.style.display = 'none';
     readMoreBtn.style.display = 'block';
     seeLessBtn.style.display = 'none';
+    card.classList.remove('active');
+    card.classList.remove('initial-open');
   });
 });
 

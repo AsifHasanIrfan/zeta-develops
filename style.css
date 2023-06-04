@@ -253,7 +253,7 @@ a {
   }
 
   .nav-wrapper {
-    padding: 12px 20px;
+    padding: 12px 0;
   }
 
   .nav-items {
@@ -363,10 +363,11 @@ a {
 }
 
 .hero-title {
-  background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
+  /* background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; */
+  color: #ffffff;
   font-weight: 700;
   font-size: 40px;
   line-height: 53px;
@@ -851,6 +852,10 @@ a {
 
 @media screen and (max-width: 767px) {
   .review-icons {
+    display: none;
+  }
+
+  .review-right {
     display: none;
   }
 
@@ -1480,6 +1485,11 @@ a {
     padding: 24px;
   }
 
+  .tl-mobile-cards .active,
+  .tl-mobile-cards .initial-open {
+    border: 1px solid #7dffaf !important;
+  }
+
   .tl-mobile-card h4 {
     font-family: 'Open Sans';
     font-weight: 500;
@@ -1517,6 +1527,12 @@ a {
     font-size: 14px;
     line-height: 22px;
     color: #7dffaf;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .tl-btn:hover {
+    color: #1de068;
   }
 
   #tl-less {
@@ -1714,16 +1730,27 @@ a {
   max-width: 824px;
 }
 
-.faq-accordion .active {
+.faq-accordion-item {
+  transition: all 0.4s;
+}
+
+.faq-accordion .active,
+.faq-accordion .faq-accordion-item:hover {
   border: 1px solid #7dffaf;
 }
 
 .faq-accordion .active svg {
   transition: transform 0.3s ease-in-out;
   transform: rotate(180deg);
+  transition: all 0.4s;
 }
 
-.faq-accordion .active svg path {
+.faq-accordion .active svg path,
+.faq-accordion {
+  fill: #7dffaf !important;
+}
+
+.faq-accordion .faq-accordion-item:hover svg path {
   fill: #7dffaf !important;
 }
 
@@ -2426,12 +2453,13 @@ a {
   font-family: 'font1';
   font-weight: 700;
   text-align: center;
-  background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
+  /* background: linear-gradient(91.25deg, #7dffaf -2.45%, #4e91f6 107.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  text-fill-color: transparent; */
   margin-bottom: 48px;
+  color: #ffffff;
 }
 
 #case-study .gradiant-bg {
