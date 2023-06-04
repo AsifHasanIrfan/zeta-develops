@@ -442,6 +442,26 @@ a {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  /* .hero-title {
+    font-size: 65px !important;
+    line-height: 50px;
+  }
+  .hero-wrapper .col-md-6:nth-child(1) {
+    max-width: 60%;
+  }
+  .hero-wrapper .col-md-6:nth-child(2) {
+    max-width: 40%;
+  } */
+
+  .hero-btns {
+    flex-direction: column;
+  }
+  .hero-btns button {
+    width: 320px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #review-modal,
   #video-modal {
