@@ -3,7 +3,7 @@
 $(document).ready(function () {
   $('.cs-slider').slick({
     slidesToShow: 2,
-    slidesToScroll: 'auto',
+    slidesToScroll: 1,
     dots: false,
     // centerMode: true,
     arrows: false,
